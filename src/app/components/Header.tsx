@@ -65,7 +65,7 @@ return (
 
 {/* Main Navbar with Gradient */}
       <nav
-        className={`bg-gradient-to-r from-times-red to-times-purple text-white transition-all duration-300 ${
+        className={`bg-times-red bg-gradient-to-r from-times-red to-times-purple text-white transition-all duration-300 ${
           isScrolled ? 'shadow-lg' : ''
         }`}
       >

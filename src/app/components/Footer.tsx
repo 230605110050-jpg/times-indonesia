@@ -4,7 +4,7 @@ import { categories } from '../data/mockData';
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-times-red to-times-purple text-white">
+    <footer className="bg-times-red bg-gradient-to-r from-times-red to-times-purple text-white">
       
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
