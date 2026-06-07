@@ -11,6 +11,8 @@ import { VideoPage } from './pages/VideoPage';
 import { FokusPage } from './pages/FokusPage';
 import { EKoranPage } from './pages/EKoranPage';
 import { EKoranDetailPage } from './pages/EKoranDetailPage';
+import { EventPage } from './pages/EventPage';
+import { EventDetailPage } from './pages/EventDetailPage';
 import { SearchPage } from './pages/SearchPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 
@@ -28,6 +30,8 @@ export const router = createBrowserRouter([
       { path: 'video', Component: VideoPage },
       { path: 'fokus', Component: FokusPage },
       { path: 'ekoran', Component: EKoranPage },
+      { path: 'event', Component: EventPage },
+      { path: 'event/:slug', Component: EventDetailPage },
       { path: 'search', Component: SearchPage },
       { path: '*', Component: NotFoundPage },
     ],

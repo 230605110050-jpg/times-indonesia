@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router';
 import { Clock, Eye, TrendingUp, Calendar, Globe, Flag, MapPin, CheckCircle, Coffee, TrendingUp as TrendingUpIcon, Laptop, GraduationCap, Trophy, Car, Heart, UtensilsCrossed, Plane, User, BookLock, Newspaper, Play, Image, FileText, Search, ArrowRight, Bookmark, MessageSquare } from 'lucide-react';
-import { articles, categories, events, popularArticles, ekoranEditions, photos, interviews, cekFaktaItems, focusTopics } from '../data/mockData';
+import { articles, categories, popularArticles, ekoranEditions, photos, interviews, cekFaktaItems, focusTopics } from '../data/mockData';
+import { events } from '../data/eventData';
 import { QuickLinksPanel } from '../components/QuickLinksPanel';
 
 export function HomePage() {
@@ -499,10 +500,10 @@ return (
                 alt="TIMES Event" 
                 className="h-14 w-auto"
               />
-              <Link to="/event" className="flex items-center gap-2 px-5 py-2.5 bg-times-red text-white font-semibold rounded-lg hover:bg-red-700 hover:shadow-lg hover:scale-105 transition-all text-sm">
+<a href="https://times-event.vercel.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-2.5 bg-times-red text-white font-semibold rounded-lg hover:bg-red-700 hover:shadow-lg hover:scale-105 transition-all text-sm">
                 <Calendar className="w-4 h-4" />
                 Lihat Semua
-              </Link>
+              </a>
             </div>
             
             {/* Card Grid - 5 Events in responsive grid with enhanced hover */}
