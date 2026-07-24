@@ -304,7 +304,7 @@ git pull origin main
 
 | Nama | NIM |
 |------|------|
-| ... | ... |
+| SUNANDAR SUHERMAN | 230605110050 |
 | ... | ... |
 | ... | ... |
 
