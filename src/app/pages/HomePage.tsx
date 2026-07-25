@@ -6,6 +6,26 @@ import { articles, categories, popularArticles, ekoranEditions, photos, intervie
 import { events } from '../data/eventData';
 import { QuickLinksPanel } from '../components/QuickLinksPanel';
 
+// Komponen Ad Space - reusable untuk berbagai ukuran iklan Google Ads
+function AdBanner({ size }: { size: 'leaderboard' | 'rectangle' }) {
+  const dimensions = {
+    leaderboard: { width: 728, height: 90, label: '728 x 90' },
+    rectangle: { width: 300, height: 250, label: '300 x 250' },
+  };
+  const { width, height, label } = dimensions[size];
+
+  return (
+    <div className="flex justify-center my-6">
+      <div
+        className="bg-gray-100 border border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-xs font-medium rounded"
+        style={{ width: '100%', maxWidth: `${width}px`, height: `${height}px` }}
+      >
+        Advertisement · {label}
+      </div>
+    </div>
+  );
+}
+
 export function HomePage() {
   const breakingArticles = articles.filter((a) => a.isBreaking);
   const trendingArticles = articles.filter((a) => a.isTrending);
@@ -118,6 +138,12 @@ return (
               </div>
 </div>
           </div>
+        </div>
+      </section>
+{/* Ad Space - Leaderboard */}
+      <section className="py-4 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <AdBanner size="leaderboard" />
         </div>
       </section>
 
@@ -800,7 +826,12 @@ return (
             </div>
 
             {/* Sidebar */}
-            <div className="lg:col-span-4 space-y-6">
+             <div className="lg:col-span-4 space-y-6">
+              {/* Ad Space - Medium Rectangle */}
+              <div className="bg-white rounded-xl shadow-sm p-4">
+                <AdBanner size="rectangle" />
+              </div>
+
               {/* Terpopuler Widget */}
               <div className="bg-white rounded-xl shadow-sm p-4">
                 <div className="flex items-center gap-2 mb-4">
