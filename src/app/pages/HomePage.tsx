@@ -5,26 +5,7 @@ import { Clock, Eye, TrendingUp, Calendar, Globe, Flag, MapPin, CheckCircle, Cof
 import { articles, categories, popularArticles, ekoranEditions, photos, interviews, cekFaktaItems, focusTopics } from '../data/mockData';
 import { events } from '../data/eventData';
 import { QuickLinksPanel } from '../components/QuickLinksPanel';
-
-// Komponen Ad Space - reusable untuk berbagai ukuran iklan Google Ads
-function AdBanner({ size }: { size: 'leaderboard' | 'rectangle' }) {
-  const dimensions = {
-    leaderboard: { width: 728, height: 90, label: '728 x 90' },
-    rectangle: { width: 300, height: 250, label: '300 x 250' },
-  };
-  const { width, height, label } = dimensions[size];
-
-  return (
-    <div className="flex justify-center my-6">
-      <div
-        className="bg-gray-100 border border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-xs font-medium rounded"
-        style={{ width: '100%', maxWidth: `${width}px`, height: `${height}px` }}
-      >
-        Advertisement · {label}
-      </div>
-    </div>
-  );
-}
+import { AdBanner } from '../components/AdBanner';
 
 export function HomePage() {
   const breakingArticles = articles.filter((a) => a.isBreaking);
@@ -791,8 +772,68 @@ return (
                 <FileText className="w-6 h-6 text-times-red" />
                 <h2 className="text-2xl font-bold">Jelajah Berita</h2>
               </div>
-              <div className="space-y-4">
-                {articles.map((article, index) => (
+             <div className="space-y-4">
+                {articles.slice(0, 4).map((article, index) => (
+                  <motion.div
+                    key={article.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.03 }}
+                  >
+                    <Link to={`/berita/${article.slug}`} className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                      <div className="flex gap-4 p-4">
+                        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                          <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs text-times-red font-semibold">{article.category}</span>
+                            <span className="text-xs text-text-secondary">• {article.readTime} menit baca</span>
+                          </div>
+                          <h3 className="font-bold text-base line-clamp-2 group-hover:text-times-red transition-colors">{article.title}</h3>
+                          <p className="text-text-secondary text-sm line-clamp-1 mt-1">{article.excerpt}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+
+                {/* Ad Space - In-Feed Leaderboard */}
+                <AdBanner size="leaderboard" />
+
+                {articles.slice(4, 8).map((article, index) => (
+                  <motion.div
+                    key={article.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.03 }}
+                  >
+                    <Link to={`/berita/${article.slug}`} className="group block bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                      <div className="flex gap-4 p-4">
+                        <div className="w-32 h-24 flex-shrink-0 overflow-hidden rounded-lg">
+                          <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs text-times-red font-semibold">{article.category}</span>
+                            <span className="text-xs text-text-secondary">• {article.readTime} menit baca</span>
+                          </div>
+                          <h3 className="font-bold text-base line-clamp-2 group-hover:text-times-red transition-colors">{article.title}</h3>
+                          <p className="text-text-secondary text-sm line-clamp-1 mt-1">{article.excerpt}</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+
+                {/* Ad Space - In-Feed Rectangle */}
+                <div className="flex justify-center">
+                  <AdBanner size="rectangle" />
+                </div>
+
+                {articles.slice(8).map((article, index) => (
                   <motion.div
                     key={article.id}
                     initial={{ opacity: 0, y: 20 }}
@@ -869,6 +910,11 @@ return (
                     </Link>
                   ))}
                 </div>
+              </div>
+
+             {/* Ad Space - Vertical Skyscraper */}
+              <div className="bg-white rounded-xl shadow-sm p-4 flex justify-center">
+                <AdBanner size="skyscraper" />
               </div>
 
               {/* Cek Fakta Widget - Dark Card */}
