@@ -7,20 +7,20 @@ import { AdBanner } from '../components/AdBanner';
 // SVG Home Icon Component (inline for consistency)
 function HomeIcon({ className = "w-4 h-4" }: { className?: string }) {
   return (
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      width="24" 
-      height="24" 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      stroke="currentColor" 
-      strokeWidth="2" 
-      strokeLinecap="round" 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
     >
-      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-      <polyline points="9 22 9 12 15 12 15 22"/>
+      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <polyline points="9 22 9 12 15 12 15 22" />
     </svg>
   );
 }
@@ -63,7 +63,7 @@ export function ArticlePage() {
       {/* Breadcrumb */}
       <div className="bg-secondary-background py-4">
         <div className="max-w-4xl mx-auto px-4">
-<div className="flex items-center gap-2 text-sm text-text-secondary">
+          <div className="flex items-center gap-2 text-sm text-text-secondary">
             <Link to="/" className="hover:text-times-red transition-colors">
               <HomeIcon className="w-4 h-4" />
             </Link>
@@ -86,13 +86,17 @@ export function ArticlePage() {
               to="/"
               className="inline-flex items-center gap-2 text-text-secondary hover:text-times-red mb-6 transition-colors"
             >
-             <ArrowLeft className="w-4 h-4" />
+              <ArrowLeft className="w-4 h-4" />
               Kembali
             </Link>
           </motion.div>
 
           {/* Ad Space - Leaderboard (Top) */}
-          <AdBanner size="leaderboard" />
+          <AdBanner
+            size="leaderboard"
+            imageUrl="/image/logo-times-event.png"
+            targetUrl="https://times-event.vercel.app/"
+          />
 
           {/* Category Badge */}
           <motion.div
@@ -222,9 +226,13 @@ export function ArticlePage() {
               Dalam implementasi sebenarnya, konten ini akan diambil dari CMS dan bisa berisi berbagai
               elemen seperti paragraf, heading, gambar, video, quote, dan embed social media.
             </p>
-           {/* Ad Space - In-Article Rectangle */}
+            {/* Ad Space - In-Article Rectangle */}
             <div className="not-prose">
-              <AdBanner size="rectangle" />
+              <AdBanner
+                size="leaderboard"
+                imageUrl="/image/logo-times-event.png"
+                targetUrl="https://times-event.vercel.app/"
+              />
             </div>
 
             <blockquote className="border-l-4 border-times-red pl-6 py-4 my-8 bg-secondary-background rounded-r-lg">
@@ -260,9 +268,13 @@ export function ArticlePage() {
         </div>
       </article>
 
-     {/* Ad Space - Leaderboard (Before Related) */}
+      {/* Ad Space - Leaderboard (Before Related) */}
       <div className="max-w-4xl mx-auto px-4">
-        <AdBanner size="leaderboard" />
+        <AdBanner
+          size="leaderboard"
+          imageUrl="/image/logo-times-event.png"
+          targetUrl="https://times-event.vercel.app/"
+        />
       </div>
 
       {/* Related Articles */}

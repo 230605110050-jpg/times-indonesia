@@ -148,7 +148,7 @@ export const focusTopics: FocusTopic[] = [
     articleCount: 45,
     slug: 'piala-dunia-2026',
   },
-{
+  {
     id: '2',
     title: 'Muktamar NU 2026',
     description: 'Liputan lengkap Muktamar Nahdlatul Ulama ke-34 yang diselenggarakan untuk memilih kepemimpinan baru organisasi.',
@@ -193,7 +193,7 @@ export const focusTopics: FocusTopic[] = [
     articleCount: 18,
     slug: 'tajuk-redaksi',
   },
-{
+  {
     id: '7',
     title: 'Kontes AI',
     description: 'Kompetisi kecerdasan buatan dan teknologi inovatif untuk mendorong kemajuan digital Indonesia.',
@@ -238,7 +238,7 @@ export const focusTopics: FocusTopic[] = [
     articleCount: 22,
     slug: 'cop31-iklim',
   },
-{
+  {
     id: '12',
     title: 'Transformasi Digital',
     description: 'Portal报道 tentang transformasi ekonomi digital dan adopsi teknologi terbaru di berbagai sektor.',
@@ -247,7 +247,7 @@ export const focusTopics: FocusTopic[] = [
     articleCount: 51,
     slug: 'transformasi-digital',
   },
-{
+  {
     id: '13',
     title: 'Ekonomi Makro',
     description: 'Analisis mendalam tentang kebijakan moneter, fiskal, dan situasi ekonomi makro Indonesia.',
@@ -540,7 +540,7 @@ export const photos: Photo[] = [
     slug: 'pendakian-gunung-bromo',
     title: 'Keindahan Sunrise di Gunung Bromo',
     description: 'Pesona matahari terbit dari kawah gunung berapi aktif.',
-    image: 'https://images.unsplash.com/photo-1506905925346-20b68705e8a9?w=800',
+    image: 'https://picsum.photos/seed/bromo2026/800/600',
     category: 'Wisata',
     photographer: 'Budi Santoso',
     publishedAt: '2026-06-02T06:00:00',
@@ -551,7 +551,7 @@ export const photos: Photo[] = [
     slug: 'pacific-games-2026',
     title: 'Pacific Games 2026: Atlet Indonesia Raih Emas',
     description: 'Momen bersejarah kemenangan atlet Indonesia di Pacific Games.',
-    image: 'https://images.unsplash.com/photo-1461896836934-b64c-3bbc0a507796?w=800',
+    image: 'https://picsum.photos/seed/pacificgames/800/600',
     category: 'Olahraga',
     photographer: 'Dian Pratama',
     publishedAt: '2026-06-01T20:00:00',
@@ -622,7 +622,7 @@ export const interviews: Interview[] = [
     ],
     infographic: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800'
   },
-{
+  {
     id: '2',
     slug: 'wawancara-kepala-bps',
     title: 'Kepala BPS: Data Akurat Kunci Kebijakan',
@@ -758,50 +758,50 @@ export const interviews: Interview[] = [
 // E-Koran Editions
 export const ekoranEditions: EKoran[] = [
   // 4 Juni 2026
-  { id: '1', title: 'TIMES Indonesia', edition: 'Edisi 1847', coverImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', pdfUrl: '#', date: '2026-06-04', views: 31100, timeAgo: '17 jam yang lalu', category: 'Olahraga' },
-  { id: '2', title: 'TIMES Indonesia', edition: 'Edisi 1846', coverImage: 'https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400', pdfUrl: '#', date: '2026-06-04', views: 20500, timeAgo: '17 jam yang lalu', category: 'Hiburan' },
-  { id: '3', title: 'TIMES Indonesia', edition: 'Edisi 1845', coverImage: 'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400', pdfUrl: '#', date: '2026-06-04', views: 18200, timeAgo: '17 jam yang lalu', category: 'Politik' },
-  { id: '4', title: 'TIMES Indonesia', edition: 'Edisi 1844', coverImage: 'https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400', pdfUrl: '#', date: '2026-06-04', views: 15700, timeAgo: '17 jam yang lalu', category: 'Musik' },
+  { id: '1', title: 'TIMES Indonesia', edition: 'Edisi 1847', coverImage: 'https://picsum.photos/seed/edisi1847/400/600', pdfUrl: '#', date: '2026-06-04', views: 31100, timeAgo: '17 jam yang lalu', category: 'Olahraga' },
+  { id: '2', title: 'TIMES Indonesia', edition: 'Edisi 1846', coverImage: 'https://picsum.photos/seed/edisi1846/400/600', pdfUrl: '#', date: '2026-06-04', views: 20500, timeAgo: '17 jam yang lalu', category: 'Hiburan' },
+  { id: '3', title: 'TIMES Indonesia', edition: 'Edisi 1845', coverImage: 'https://picsum.photos/seed/edisi1845/400/600', pdfUrl: '#', date: '2026-06-04', views: 18200, timeAgo: '17 jam yang lalu', category: 'Politik' },
+  { id: '4', title: 'TIMES Indonesia', edition: 'Edisi 1844', coverImage: 'https://picsum.photos/seed/edisi1844/400/600', pdfUrl: '#', date: '2026-06-04', views: 15700, timeAgo: '17 jam yang lalu', category: 'Musik' },
   // 3 Juni 2026
-  { id: '5', title: 'TIMES Indonesia', edition: 'Edisi 1843', coverImage: 'https://images.unsplash.com/photo-1546953304-5d96f43c2e94?w=400', pdfUrl: '#', date: '2026-06-03', views: 28400, timeAgo: '1 hari yang lalu', category: 'Film' },
-  { id: '6', title: 'TIMES Indonesia', edition: 'Edisi 1842', coverImage: 'https://images.unsplash.com/photo-1560177112-fbfd5760d446?w=400', pdfUrl: '#', date: '2026-06-03', views: 22100, timeAgo: '1 hari yang lalu', category: 'Lifestyle' },
-  { id: '7', title: 'TIMES Indonesia', edition: 'Edisi 1841', coverImage: 'https://images.unsplash.com/photo-1551803092-e20773f7fdc4?w=400', pdfUrl: '#', date: '2026-06-03', views: 19300, timeAgo: '1 hari yang lalu', category: 'Kuliner' },
-  { id: '8', title: 'TIMES Indonesia', edition: 'Edisi 1840', coverImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', pdfUrl: '#', date: '2026-06-03', views: 16800, timeAgo: '1 hari yang lalu', category: 'Internasional' },
+  { id: '5', title: 'TIMES Indonesia', edition: 'Edisi 1843', coverImage: 'https://picsum.photos/seed/edisi1843/400/600', pdfUrl: '#', date: '2026-06-03', views: 28400, timeAgo: '1 hari yang lalu', category: 'Film' },
+  { id: '6', title: 'TIMES Indonesia', edition: 'Edisi 1842', coverImage: 'https://picsum.photos/seed/edisi1842/400/600', pdfUrl: '#', date: '2026-06-03', views: 22100, timeAgo: '1 hari yang lalu', category: 'Lifestyle' },
+  { id: '7', title: 'TIMES Indonesia', edition: 'Edisi 1841', coverImage: 'https://picsum.photos/seed/edisi1841/400/600', pdfUrl: '#', date: '2026-06-03', views: 19300, timeAgo: '1 hari yang lalu', category: 'Kuliner' },
+  { id: '8', title: 'TIMES Indonesia', edition: 'Edisi 1840', coverImage: 'https://picsum.photos/seed/edisi1840/400/600', pdfUrl: '#', date: '2026-06-03', views: 16800, timeAgo: '1 hari yang lalu', category: 'Internasional' },
   // 2 Juni 2026
-  { id: '9', title: 'TIMES Indonesia', edition: 'Edisi 1839', coverImage: 'https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400', pdfUrl: '#', date: '2026-06-02', views: 25600, timeAgo: '2 hari yang lalu', category: 'Olahraga' },
-  { id: '10', title: 'TIMES Indonesia', edition: 'Edisi 1838', coverImage: 'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400', pdfUrl: '#', date: '2026-06-02', views: 21400, timeAgo: '2 hari yang lalu', category: 'Hiburan' },
-  { id: '11', title: 'TIMES Indonesia', edition: 'Edisi 1837', coverImage: 'https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400', pdfUrl: '#', date: '2026-06-02', views: 18900, timeAgo: '2 hari yang lalu', category: 'Politik' },
-  { id: '12', title: 'TIMES Indonesia', edition: 'Edisi 1836', coverImage: 'https://images.unsplash.com/photo-1546953304-5d96f43c2e94?w=400', pdfUrl: '#', date: '2026-06-02', views: 16200, timeAgo: '2 hari yang lalu', category: 'Musik' },
+  { id: '9', title: 'TIMES Indonesia', edition: 'Edisi 1839', coverImage: 'https://picsum.photos/seed/edisi1839/400/600', pdfUrl: '#', date: '2026-06-02', views: 25600, timeAgo: '2 hari yang lalu', category: 'Olahraga' },
+  { id: '10', title: 'TIMES Indonesia', edition: 'Edisi 1838', coverImage: 'https://picsum.photos/seed/edisi1838/400/600', pdfUrl: '#', date: '2026-06-02', views: 21400, timeAgo: '2 hari yang lalu', category: 'Hiburan' },
+  { id: '11', title: 'TIMES Indonesia', edition: 'Edisi 1837', coverImage: 'https://picsum.photos/seed/edisi1837/400/600', pdfUrl: '#', date: '2026-06-02', views: 18900, timeAgo: '2 hari yang lalu', category: 'Politik' },
+  { id: '12', title: 'TIMES Indonesia', edition: 'Edisi 1836', coverImage: 'https://picsum.photos/seed/edisi1836/400/600', pdfUrl: '#', date: '2026-06-02', views: 16200, timeAgo: '2 hari yang lalu', category: 'Musik' },
   // 1 Juni 2026
-  { id: '13', title: 'TIMES Indonesia', edition: 'Edisi 1835', coverImage: 'https://images.unsplash.com/photo-1560177112-fbfd5760d446?w=400', pdfUrl: '#', date: '2026-06-01', views: 27800, timeAgo: '3 hari yang lalu', category: 'Film' },
-  { id: '14', title: 'TIMES Indonesia', edition: 'Edisi 1834', coverImage: 'https://images.unsplash.com/photo-1551803092-e20773f7fdc4?w=400', pdfUrl: '#', date: '2026-06-01', views: 23200, timeAgo: '3 hari yang lalu', category: 'Lifestyle' },
-  { id: '15', title: 'TIMES Indonesia', edition: 'Edisi 1833', coverImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', pdfUrl: '#', date: '2026-06-01', views: 20100, timeAgo: '3 hari yang lalu', category: 'Kuliner' },
-  { id: '16', title: 'TIMES Indonesia', edition: 'Edisi 1832', coverImage: 'https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400', pdfUrl: '#', date: '2026-06-01', views: 17500, timeAgo: '3 hari yang lalu', category: 'Internasional' },
+  { id: '13', title: 'TIMES Indonesia', edition: 'Edisi 1835', coverImage: 'https://picsum.photos/seed/edisi1835/400/600', pdfUrl: '#', date: '2026-06-01', views: 27800, timeAgo: '3 hari yang lalu', category: 'Film' },
+  { id: '14', title: 'TIMES Indonesia', edition: 'Edisi 1834', coverImage: 'https://picsum.photos/seed/edisi1834/400/600', pdfUrl: '#', date: '2026-06-01', views: 23200, timeAgo: '3 hari yang lalu', category: 'Lifestyle' },
+  { id: '15', title: 'TIMES Indonesia', edition: 'Edisi 1833', coverImage: 'https://picsum.photos/seed/edisi1833/400/600', pdfUrl: '#', date: '2026-06-01', views: 20100, timeAgo: '3 hari yang lalu', category: 'Kuliner' },
+  { id: '16', title: 'TIMES Indonesia', edition: 'Edisi 1832', coverImage: 'https://picsum.photos/seed/edisi1832/400/600', pdfUrl: '#', date: '2026-06-01', views: 17500, timeAgo: '3 hari yang lalu', category: 'Internasional' },
   // 31 Mei 2026
-  { id: '17', title: 'TIMES Indonesia', edition: 'Edisi 1831', coverImage: 'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400', pdfUrl: '#', date: '2026-05-31', views: 26300, timeAgo: '4 hari yang lalu', category: 'Olahraga' },
-  { id: '18', title: 'TIMES Indonesia', edition: 'Edisi 1830', coverImage: 'https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400', pdfUrl: '#', date: '2026-05-31', views: 21900, timeAgo: '4 hari yang lalu', category: 'Hiburan' },
-  { id: '19', title: 'TIMES Indonesia', edition: 'Edisi 1829', coverImage: 'https://images.unsplash.com/photo-1546953304-5d96f43c2e94?w=400', pdfUrl: '#', date: '2026-05-31', views: 19400, timeAgo: '4 hari yang lalu', category: 'Politik' },
-  { id: '20', title: 'TIMES Indonesia', edition: 'Edisi 1828', coverImage: 'https://images.unsplash.com/photo-1560177112-fbfd5760d446?w=400', pdfUrl: '#', date: '2026-05-31', views: 16800, timeAgo: '4 hari yang lalu', category: 'Musik' },
+  { id: '17', title: 'TIMES Indonesia', edition: 'Edisi 1831', coverImage: 'https://picsum.photos/seed/edisi1831/400/600', pdfUrl: '#', date: '2026-05-31', views: 26300, timeAgo: '4 hari yang lalu', category: 'Olahraga' },
+  { id: '18', title: 'TIMES Indonesia', edition: 'Edisi 1830', coverImage: 'https://picsum.photos/seed/edisi1830/400/600', pdfUrl: '#', date: '2026-05-31', views: 21900, timeAgo: '4 hari yang lalu', category: 'Hiburan' },
+  { id: '19', title: 'TIMES Indonesia', edition: 'Edisi 1829', coverImage: 'https://picsum.photos/seed/edisi1829/400/600', pdfUrl: '#', date: '2026-05-31', views: 19400, timeAgo: '4 hari yang lalu', category: 'Politik' },
+  { id: '20', title: 'TIMES Indonesia', edition: 'Edisi 1828', coverImage: 'https://picsum.photos/seed/edisi1828/400/600', pdfUrl: '#', date: '2026-05-31', views: 16800, timeAgo: '4 hari yang lalu', category: 'Musik' },
   // 30 Mei 2026
-  { id: '21', title: 'TIMES Indonesia', edition: 'Edisi 1827', coverImage: 'https://images.unsplash.com/photo-1551803092-e20773f7fdc4?w=400', pdfUrl: '#', date: '2026-05-30', views: 24100, timeAgo: '5 hari yang lalu', category: 'Film' },
-  { id: '22', title: 'TIMES Indonesia', edition: 'Edisi 1826', coverImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', pdfUrl: '#', date: '2026-05-30', views: 20800, timeAgo: '5 hari yang lalu', category: 'Lifestyle' },
-  { id: '23', title: 'TIMES Indonesia', edition: 'Edisi 1825', coverImage: 'https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400', pdfUrl: '#', date: '2026-05-30', views: 18100, timeAgo: '5 hari yang lalu', category: 'Kuliner' },
-  { id: '24', title: 'TIMES Indonesia', edition: 'Edisi 1824', coverImage: 'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400', pdfUrl: '#', date: '2026-05-30', views: 15400, timeAgo: '5 hari yang lalu', category: 'Internasional' },
+  { id: '21', title: 'TIMES Indonesia', edition: 'Edisi 1827', coverImage: 'https://picsum.photos/seed/edisi1827/400/600', pdfUrl: '#', date: '2026-05-30', views: 24100, timeAgo: '5 hari yang lalu', category: 'Film' },
+  { id: '22', title: 'TIMES Indonesia', edition: 'Edisi 1826', coverImage: 'https://picsum.photos/seed/edisi1826/400/600', pdfUrl: '#', date: '2026-05-30', views: 20800, timeAgo: '5 hari yang lalu', category: 'Lifestyle' },
+  { id: '23', title: 'TIMES Indonesia', edition: 'Edisi 1825', coverImage: 'https://picsum.photos/seed/edisi1825/400/600', pdfUrl: '#', date: '2026-05-30', views: 18100, timeAgo: '5 hari yang lalu', category: 'Kuliner' },
+  { id: '24', title: 'TIMES Indonesia', edition: 'Edisi 1824', coverImage: 'https://picsum.photos/seed/edisi1824/400/600', pdfUrl: '#', date: '2026-05-30', views: 15400, timeAgo: '5 hari yang lalu', category: 'Internasional' },
   // 29 Mei 2026
-  { id: '25', title: 'TIMES Indonesia', edition: 'Edisi 1823', coverImage: 'https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400', pdfUrl: '#', date: '2026-05-29', views: 22900, timeAgo: '6 hari yang lalu', category: 'Olahraga' },
-  { id: '26', title: 'TIMES Indonesia', edition: 'Edisi 1822', coverImage: 'https://images.unsplash.com/photo-1546953304-5d96f43c2e94?w=400', pdfUrl: '#', date: '2026-05-29', views: 19700, timeAgo: '6 hari yang lalu', category: 'Hiburan' },
-  { id: '27', title: 'TIMES Indonesia', edition: 'Edisi 1821', coverImage: 'https://images.unsplash.com/photo-1560177112-fbfd5760d446?w=400', pdfUrl: '#', date: '2026-05-29', views: 17200, timeAgo: '6 hari yang lalu', category: 'Politik' },
-  { id: '28', title: 'TIMES Indonesia', edition: 'Edisi 1820', coverImage: 'https://images.unsplash.com/photo-1551803092-e20773f7fdc4?w=400', pdfUrl: '#', date: '2026-05-29', views: 14600, timeAgo: '6 hari yang lalu', category: 'Musik' },
+  { id: '25', title: 'TIMES Indonesia', edition: 'Edisi 1823', coverImage: 'https://picsum.photos/seed/edisi1823/400/600', pdfUrl: '#', date: '2026-05-29', views: 22900, timeAgo: '6 hari yang lalu', category: 'Olahraga' },
+  { id: '26', title: 'TIMES Indonesia', edition: 'Edisi 1822', coverImage: 'https://picsum.photos/seed/edisi1822/400/600', pdfUrl: '#', date: '2026-05-29', views: 19700, timeAgo: '6 hari yang lalu', category: 'Hiburan' },
+  { id: '27', title: 'TIMES Indonesia', edition: 'Edisi 1821', coverImage: 'https://picsum.photos/seed/edisi1821/400/600', pdfUrl: '#', date: '2026-05-29', views: 17200, timeAgo: '6 hari yang lalu', category: 'Politik' },
+  { id: '28', title: 'TIMES Indonesia', edition: 'Edisi 1820', coverImage: 'https://picsum.photos/seed/edisi1820/400/600', pdfUrl: '#', date: '2026-05-29', views: 14600, timeAgo: '6 hari yang lalu', category: 'Musik' },
   // 28 Mei 2026
-  { id: '29', title: 'TIMES Indonesia', edition: 'Edisi 1819', coverImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', pdfUrl: '#', date: '2026-05-28', views: 21800, timeAgo: '7 hari yang lalu', category: 'Film' },
-  { id: '30', title: 'TIMES Indonesia', edition: 'Edisi 1818', coverImage: 'https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400', pdfUrl: '#', date: '2026-05-28', views: 18500, timeAgo: '7 hari yang lalu', category: 'Lifestyle' },
-  { id: '31', title: 'TIMES Indonesia', edition: 'Edisi 1817', coverImage: 'https://images.unsplash.com/photo-1495020689067-958852a7765e?w=400', pdfUrl: '#', date: '2026-05-28', views: 16100, timeAgo: '7 hari yang lalu', category: 'Kuliner' },
-  { id: '32', title: 'TIMES Indonesia', edition: 'Edisi 1816', coverImage: 'https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=400', pdfUrl: '#', date: '2026-05-28', views: 13800, timeAgo: '7 hari yang lalu', category: 'Internasional' },
+  { id: '29', title: 'TIMES Indonesia', edition: 'Edisi 1819', coverImage: 'https://picsum.photos/seed/edisi1819/400/600', pdfUrl: '#', date: '2026-05-28', views: 21800, timeAgo: '7 hari yang lalu', category: 'Film' },
+  { id: '30', title: 'TIMES Indonesia', edition: 'Edisi 1818', coverImage: 'https://picsum.photos/seed/edisi1818/400/600', pdfUrl: '#', date: '2026-05-28', views: 18500, timeAgo: '7 hari yang lalu', category: 'Lifestyle' },
+  { id: '31', title: 'TIMES Indonesia', edition: 'Edisi 1817', coverImage: 'https://picsum.photos/seed/edisi1817/400/600', pdfUrl: '#', date: '2026-05-28', views: 16100, timeAgo: '7 hari yang lalu', category: 'Kuliner' },
+  { id: '32', title: 'TIMES Indonesia', edition: 'Edisi 1816', coverImage: 'https://picsum.photos/seed/edisi1816/400/600', pdfUrl: '#', date: '2026-05-28', views: 13800, timeAgo: '7 hari yang lalu', category: 'Internasional' },
   // 27 Mei 2026
-  { id: '33', title: 'TIMES Indonesia', edition: 'Edisi 1815', coverImage: 'https://images.unsplash.com/photo-1546953304-5d96f43c2e94?w=400', pdfUrl: '#', date: '2026-05-27', views: 20600, timeAgo: '8 hari yang lalu', category: 'Olahraga' },
-  { id: '34', title: 'TIMES Indonesia', edition: 'Edisi 1814', coverImage: 'https://images.unsplash.com/photo-1560177112-fbfd5760d446?w=400', pdfUrl: '#', date: '2026-05-27', views: 17400, timeAgo: '8 hari yang lalu', category: 'Hiburan' },
-  { id: '35', title: 'TIMES Indonesia', edition: 'Edisi 1813', coverImage: 'https://images.unsplash.com/photo-1551803092-e20773f7fdc4?w=400', pdfUrl: '#', date: '2026-05-27', views: 15100, timeAgo: '8 hari yang lalu', category: 'Politik' },
-  { id: '36', title: 'TIMES Indonesia', edition: 'Edisi 1812', coverImage: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400', pdfUrl: '#', date: '2026-05-27', views: 12900, timeAgo: '8 hari yang lalu', category: 'Musik' },
+  { id: '33', title: 'TIMES Indonesia', edition: 'Edisi 1815', coverImage: 'https://picsum.photos/seed/edisi1815/400/600', pdfUrl: '#', date: '2026-05-27', views: 20600, timeAgo: '8 hari yang lalu', category: 'Olahraga' },
+  { id: '34', title: 'TIMES Indonesia', edition: 'Edisi 1814', coverImage: 'https://picsum.photos/seed/edisi1814/400/600', pdfUrl: '#', date: '2026-05-27', views: 17400, timeAgo: '8 hari yang lalu', category: 'Hiburan' },
+  { id: '35', title: 'TIMES Indonesia', edition: 'Edisi 1813', coverImage: 'https://picsum.photos/seed/edisi1813/400/600', pdfUrl: '#', date: '2026-05-27', views: 15100, timeAgo: '8 hari yang lalu', category: 'Politik' },
+  { id: '36', title: 'TIMES Indonesia', edition: 'Edisi 1812', coverImage: 'https://picsum.photos/seed/edisi1812/400/600', pdfUrl: '#', date: '2026-05-27', views: 12900, timeAgo: '8 hari yang lalu', category: 'Musik' },
 ];
 
 // Cek Fakta Data
